@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashutosh Kumar — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ─── CURSOR ──────────────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── NAVBAR ──────────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="#hero">AK<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn-resume" href="RESUME_f.pdf" download>Resume ↗</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="mono">01 /</span> Hello, World.</p>
+      <h1 class="hero-name">Ashutosh<br><em>Kumar</em></h1>
+      <p class="hero-tagline">CS Student · Data Science Enthusiast · Problem Solver</p>
+      <p class="hero-bio">
+        Building intelligent systems at the intersection of AI, data, and software engineering.
+        Currently pursuing B.Tech CSE at JIIT Noida — driven by curiosity, fueled by code.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="RESUME_f.pdf" download class="btn-outline">Download Resume ↓</a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span class="mono">scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-initials">AK</div>
+        <svg class="ring-svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="6 4"/></svg>
+      </div>
+      <div class="floating-tag tag1"><span class="mono">Python</span></div>
+      <div class="floating-tag tag2"><span class="mono">TensorFlow</span></div>
+      <div class="floating-tag tag3"><span class="mono">C++</span></div>
+      <div class="floating-tag tag4"><span class="mono">ML / AI</span></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ───────────────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="section-label"><span class="mono">02 / About</span></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title">Crafting Intelligence<br><em>from Data</em></h2>
+        <p>
+          I'm a first-year Computer Science student at Jaypee Institute of Information Technology, Noida,
+          with a deep passion for Data Science, Artificial Intelligence, and Machine Learning. I believe the
+          best code does more than run — it solves real problems.
+        </p>
+        <p>
+          My foundation in DSA and software engineering, combined with hands-on project experience in
+          deep learning and analytics, allows me to bridge theory and practice. Whether it's training CNNs
+          or analyzing business KPIs, I approach every problem with structured thinking and creative energy.
+        </p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects Built</span></div>
+          <div class="stat"><span class="stat-num">7.0</span><span class="stat-label">CGPA (B.Tech)</span></div>
+          <div class="stat"><span class="stat-num">89.8%</span><span class="stat-label">Class XII Score</span></div>
+        </div>
+      </div>
+      <div class="about-side reveal">
+        <div class="info-card">
+          <div class="info-row"><span class="mono label">Institute</span><span>JIIT, Noida</span></div>
+          <div class="info-row"><span class="mono label">Degree</span><span>B.Tech CSE</span></div>
+          <div class="info-row"><span class="mono label">Year</span><span>2024–2028</span></div>
+          <div class="info-row"><span class="mono label">Location</span><span>Sector 128, Noida, UP</span></div>
+          <div class="info-row"><span class="mono label">Focus</span><span>AI / ML / Data Science</span></div>
+          <div class="info-row"><span class="mono label">Status</span><span class="status-badge">Open to Internships</span></div>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-text">
+              <strong>B.Tech CSE</strong>
+              <span>JIIT Noida · 2024–2028 · CGPA 7.0</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-text">
+              <strong>XII — CBSE</strong>
+              <span>Delhi Public School · 2023 · 89.8%</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-text">
+              <strong>X — ICSE</strong>
+              <span>Indian Public School · 2021 · 81.4%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ──────────────────────────────────────────────── -->
+  <section class="skills section" id="skills">
+    <div class="section-label"><span class="mono">03 / Skills</span></div>
+    <h2 class="section-title reveal">My Technical<br><em>Arsenal</em></h2>
+    <div class="skills-layout">
+      <div class="skill-group reveal">
+        <h3 class="group-title">Languages</h3>
+        <div class="skill-pills">
+          <span class="pill">C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">Java</span>
+          <span class="pill">C</span>
+          <span class="pill">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="group-title">AI / ML / Data</h3>
+        <div class="skill-pills">
+          <span class="pill accent">TensorFlow</span>
+          <span class="pill accent">Scikit-Learn</span>
+          <span class="pill accent">OpenCV</span>
+          <span class="pill accent">Pandas</span>
+          <span class="pill accent">NumPy</span>
+          <span class="pill accent">Seaborn</span>
+          <span class="pill accent">CNN</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="group-title">Tools & Databases</h3>
+        <div class="skill-pills">
+          <span class="pill dim">MySQL</span>
+          <span class="pill dim">Git</span>
+          <span class="pill dim">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="group-title">Soft Skills</h3>
+        <div class="skill-pills">
+          <span class="pill soft">Strategic Leadership</span>
+          <span class="pill soft">Analytical Thinking</span>
+          <span class="pill soft">Problem Solving</span>
+          <span class="pill soft">Quick Learner</span>
+        </div>
+      </div>
+    </div>
+    <div class="proficiency-bars reveal">
+      <h3 class="group-title" style="margin-bottom:1.5rem;">Proficiency</h3>
+      <div class="bar-item">
+        <div class="bar-meta"><span>Python</span><span class="mono">85%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="85"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span>C++</span><span class="mono">80%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span>TensorFlow / Deep Learning</span><span class="mono">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span>Data Analytics (Pandas / Seaborn)</span><span class="mono">75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span>Java</span><span class="mono">65%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ────────────────────────────────────────────── -->
+  <section class="projects section" id="projects">
+    <div class="section-label"><span class="mono">04 / Projects</span></div>
+    <h2 class="section-title reveal">Things I've<br><em>Built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-index="01">
+        <div class="card-accent-line"></div>
+        <div class="card-number mono">01</div>
+        <h3 class="card-title">Sales Performance Gap Analysis</h3>
+        <p class="card-desc">
+          Benchmark-based analytics model to detect underperforming products. Performed EDA, KPI
+          comparison, and generated visual insights to support business decisions.
+        </p>
+        <div class="card-stack">
+          <span>Python</span><span>Pandas</span><span>Seaborn</span><span>Data Analytics</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Ashu411/Sales-Performance-Gap-Analysis-for-Preventing-Underperformance-of-Products-/tree/main" target="_blank" class="card-link">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal featured" data-index="02">
+        <div class="card-accent-line"></div>
+        <div class="card-number mono">02</div>
+        <div class="featured-badge">Featured</div>
+        <h3 class="card-title">Tomato Leaf Disease Detector</h3>
+        <p class="card-desc">
+          AI-based image classification system using Deep Learning. Designed and trained a CNN to
+          classify healthy and diseased tomato leaves with image preprocessing pipelines.
+        </p>
+        <div class="card-stack">
+          <span>Python</span><span>TensorFlow</span><span>CNN</span><span>OpenCV</span><span>NumPy</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Ashu411/Tomato-Leaf-Disease-Detection-using-Deep-Learning-/tree/main" target="_blank" class="card-link">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-index="03">
+        <div class="card-accent-line"></div>
+        <div class="card-number mono">03</div>
+        <h3 class="card-title">Pandemic Spread Simulation</h3>
+        <p class="card-desc">
+          C++ based pandemic simulation using graph theory and probabilistic models. Enables analysis
+          of inter-city transmission, lockdown strategies, and real-time epidemic statistics.
+        </p>
+        <div class="card-stack">
+          <span>C++</span><span>Graph Theory</span><span>Simulation</span><span>Algorithms</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Ashu411/Pandemic-Spread-Simulation-and-Containment-Analysis-System" target="_blank" class="card-link">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATES ────────────────────────────────────────── -->
+  <section class="certificates section" id="certificates">
+    <div class="section-label"><span class="mono">05 / Certificates</span></div>
+    <h2 class="section-title reveal">Verified<br><em>Learning</em></h2>
+    <p class="certs-intro reveal">Click any certificate to expand details.</p>
+    <div class="cert-list reveal">
+
+      <div class="cert-item" data-open="false">
+        <div class="cert-header">
+          <div class="cert-icon">◈</div>
+          <div class="cert-meta">
+            <strong>Python for Data Science, AI & Development</strong>
+            <span>JIIT, Noida</span>
+          </div>
+          <div class="cert-chevron mono">+</div>
+        </div>
+        <div class="cert-body">
+          <p>Covered Python fundamentals, data manipulation with Pandas and NumPy, and introductory
+          AI/ML concepts.</p>
+          <div class="cert-tags"><span>Python</span><span>Data Science</span></div>
+        </div>
+      </div>
+
+      <div class="cert-item" data-open="false">
+        <div class="cert-header">
+          <div class="cert-icon">◈</div>
+          <div class="cert-meta">
+            <strong>Machine Learning Specialization</strong>
+            <span>DeepLearning.AI · JIIT, Noida</span>
+          </div>
+          <div class="cert-chevron mono">+</div>
+        </div>
+        <div class="cert-body">
+          <p>Completed Andrew Ng's flagship ML course covering supervised & unsupervised learning,
+          neural networks, and best practices in ML system design.</p>
+          <div class="cert-tags"><span>ML</span><span>Neural Networks</span><span>Andrew Ng</span></div>
+        </div>
+      </div>
+
+      <div class="cert-item" data-open="false">
+        <div class="cert-header">
+          <div class="cert-icon">◈</div>
+          <div class="cert-meta">
+            <strong>Data Structures & Algorithms</strong>
+            <span>LeetCode / Self-Study / JIIT, Noida</span>
+          </div>
+          <div class="cert-chevron mono">+</div>
+        </div>
+        <div class="cert-body">
+          <p>Consistent practice of DSA problems on LeetCode covering arrays, trees, graphs, dynamic
+          programming, and competitive programming patterns.</p>
+          <div class="cert-tags"><span>DSA</span><span>C++</span><span>Algorithms</span></div>
+        </div>
+      </div>
+
+      <div class="cert-item" data-open="false">
+        <div class="cert-header">
+          <div class="cert-icon">◈</div>
+          <div class="cert-meta">
+            <strong>Deep Learning with TensorFlow</strong>
+            <span>Google / JIIT, Noida</span>
+          </div>
+          <div class="cert-chevron mono">+</div>
+        </div>
+        <div class="cert-body">
+          <p>Hands-on deep learning with TensorFlow: CNNs, image classification, model training,
+          optimization techniques, and model deployment fundamentals.</p>
+          <div class="cert-tags"><span>TensorFlow</span><span>CNN</span><span>Deep Learning</span></div>
+        </div>
+      </div>
+
+      <div class="cert-item" data-open="false">
+        <div class="cert-header">
+          <div class="cert-icon">◈</div>
+          <div class="cert-meta">
+            <strong>SQL for Data Analysis</strong>
+            <span>Mode Analytics / Udemy</span>
+          </div>
+          <div class="cert-chevron mono">+</div>
+        </div>
+        <div class="cert-body">
+          <p>Proficiency in writing complex SQL queries for data analysis including joins, aggregations,
+          window functions, and query optimization using MySQL.</p>
+          <div class="cert-tags"><span>SQL</span><span>MySQL</span><span>Data Analysis</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────────────────────── -->
+  <section class="contact section" id="contact">
+    <div class="section-label"><span class="mono">06 / Contact</span></div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <h2 class="section-title">Let's Build<br><em>Something</em></h2>
+        <p>
+          Open to internship opportunities, collaborative projects, and interesting conversations.
+          Feel free to reach out — I reply within 24 hours.
+        </p>
+        <div class="contact-info">
+          <a href="mailto:ashutosh.kumar.dev01@gmail.com" class="contact-link">
+            <span class="mono">✉</span> ashutosh.kumar.dev01@gmail.com
+          </a>
+          <a href="tel:+919334884173" class="contact-link">
+            <span class="mono">✆</span> +91 93348 84173
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/Ashu411" target="_blank" class="social-btn">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://leetcode.com" target="_blank" class="social-btn">LeetCode</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="off"/>
+              <span class="err" id="nameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off"/>
+              <span class="err" id="emailErr"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off"/>
+            <span class="err" id="subjectErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, opportunity, or just say hi..."></textarea>
+            <span class="err" id="messageErr"></span>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">AK<span class="dot">.</span></p>
+      <p class="footer-copy mono">© 2025 Ashutosh Kumar. Designed & Built with passion.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Ashu411" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://leetcode.com" target="_blank">LeetCode</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
