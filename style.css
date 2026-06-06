@@ -31,7 +31,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
-  cursor: none;
+  cursor: default;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -69,7 +69,7 @@ img { max-width: 100%; display: block; }
 .section { padding: 120px 6vw; position: relative; }
 .section-label {
   position: absolute; top: 2rem; left: 6vw;
-  color: var(--gold); font-size: .75rem;
+  color: var(--gold); font-size: 2rem;
   letter-spacing: .2em; text-transform: uppercase;
 }
 .section-title {
@@ -187,7 +187,7 @@ img { max-width: 100%; display: block; }
 .hero-content { padding-top: 6rem; position: relative; z-index: 1; }
 .hero-eyebrow {
   font-family: var(--mono);
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: var(--gold);
   letter-spacing: .3em;
   text-transform: uppercase;
