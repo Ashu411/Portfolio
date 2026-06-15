@@ -174,16 +174,54 @@ form && form.addEventListener('submit', e => {
 
   /* Simulate submission */
   const btn = form.querySelector('.btn-submit');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
+
+btn.textContent = 'Sending...';
+btn.disabled = true;
+
+emailjs.send(
+  "service_q964hbg",
+  "template_9fdjrkq",
+  {
+    name: name,
+    email: email,
+    subject: subject,
+    message: message
+  }
+)
+.then(() => {
+
+  form.reset();
+
+  btn.innerHTML =
+  '<span class="btn-text">Send Message</span><span class="btn-arrow">→</span>';
+
+  btn.disabled = false;
+
+  formSuccess.innerHTML =
+  '<span>✓</span> Message sent successfully!';
+
+  formSuccess.classList.add('show');
 
   setTimeout(() => {
-    form.reset();
-    btn.innerHTML = '<span class="btn-text">Send Message</span><span class="btn-arrow">→</span>';
-    btn.disabled = false;
-    formSuccess.classList.add('show');
-    setTimeout(() => formSuccess.classList.remove('show'), 5000);
-  }, 1200);
+    formSuccess.classList.remove('show');
+  }, 5000);
+
+})
+.catch((error) => {
+
+  console.error(error);
+
+  btn.innerHTML =
+  '<span class="btn-text">Send Message</span><span class="btn-arrow">→</span>';
+
+  btn.disabled = false;
+
+  formSuccess.innerHTML =
+  '<span>✕</span> Failed to send message.';
+
+  formSuccess.classList.add('show');
+
+});
 });
 
 /* ── Active nav link on scroll ───────────────── */
@@ -220,3 +258,69 @@ window.addEventListener('scroll', () => {
     hero.style.transform = `translateY(${window.scrollY * 0.2}px)`;
   }
 }, { passive: true });
+
+
+/* ── Certificate Modal ───────────────── */
+
+const certificateModal =
+document.getElementById("certificateModal");
+
+const certificateModalImage =
+document.getElementById("certificateModalImage");
+
+const closeCertificateModal =
+document.getElementById("closeCertificateModal");
+
+document.querySelectorAll(".certificate-card img")
+.forEach(img => {
+
+  img.addEventListener("click", () => {
+
+    certificateModalImage.src = img.src;
+
+    certificateModal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+  });
+
+});
+
+function closeModal(){
+
+  certificateModal.classList.remove("show");
+
+  document.body.style.overflow = "";
+
+}
+
+closeCertificateModal.addEventListener(
+"click",
+closeModal
+);
+
+certificateModal.addEventListener(
+"click",
+e => {
+
+  if(
+    e.target.classList.contains(
+      "certificate-modal-overlay"
+    )
+  ){
+    closeModal();
+  }
+
+});
+
+document.addEventListener(
+"keydown",
+e => {
+
+  if(
+    e.key === "Escape" &&
+    certificateModal.classList.contains("show")
+  ){
+    closeModal();
+  }
+
+});

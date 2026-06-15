@@ -8,6 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("MyldBTPf8w0VU-Uur");
+</script>
+
 <body>
 
   <!-- ─── CURSOR ──────────────────────────────────────────────── -->
@@ -282,7 +289,53 @@
     </div>
   </section>
 
-  <!-- ─── CERTIFICATES ────────────────────────────────────────── -->
+  <!-- ─── CERTIFICATE GALLERY ───────────────────────── -->
+
+<section class="certificate-gallery section" id="certificate-gallery">
+  <div class="section-label">
+    <span class="mono">05 / Certificates</span>
+  </div>
+
+  <h2 class="section-title reveal">
+    Professional<br><em>Certificates</em>
+  </h2>
+
+  <div class="certificate-grid reveal">
+
+    <!-- Certificate 1 -->
+    <div class="certificate-card">
+      <img src="Techblocks_Certificate.jpg"
+           alt="Generative AI Certificate"
+           class="certificate-preview">
+
+      <div class="certificate-content">
+        <h3>Generative AI</h3>
+        <span class="certificate-org">
+        IEEE SB JIIT • TechBlocks
+        </span>
+      </div>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate-card">
+      <img src="AI-tools.png"
+           alt="AI tools and ChatGPT Workshop"
+           class="certificate-preview">
+
+      <div class="certificate-content">
+        <h3>AI tools and ChatGPT Workshop</h3>
+        <span class="certificate-org">
+        be10x 
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ─── COURSES & CERTIFICATES ────────────────────────────────────────── -->
   <section class="certificates section" id="certificates">
     <div class="section-label"><span class="mono">05 / Courses & Certificates</span></div>
     <h2 class="section-title reveal">Verified<br><em>Learning</em></h2>
@@ -413,7 +466,8 @@
         </div>
       </div>
       <div class="contact-right reveal">
-        <form class="contact-form" id="contactForm" novalidate>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/ashutosh.kumar.dev01@gmail.com"
+  method="POST" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -436,17 +490,43 @@
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, opportunity, or just say hi..."></textarea>
             <span class="err" id="messageErr"></span>
           </div>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Portfolio Message">
+          <input type="hidden" name="_template" value="table">
           <button type="submit" class="btn-submit">
             <span class="btn-text">Send Message</span>
             <span class="btn-arrow">→</span>
           </button>
           <div class="form-success" id="formSuccess">
-            <span>✓</span> Message not sent! Feature currently unavailable.
+            <span>✓</span> Message sent successfully.
           </div>
         </form>
       </div>
     </div>
   </section>
+
+
+  <!-- Certificate Modal -->
+
+<div class="certificate-modal" id="certificateModal">
+
+  <div class="certificate-modal-overlay"></div>
+
+  <div class="certificate-modal-content">
+
+    <button class="certificate-modal-close" id="closeCertificateModal">
+      ×
+    </button>
+
+    <img
+      src=""
+      id="certificateModalImage"
+      alt="Certificate Preview"
+    >
+
+  </div>
+
+</div>
 
   <!-- ─── FOOTER ──────────────────────────────────────────────── -->
   <footer class="footer">
